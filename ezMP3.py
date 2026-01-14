@@ -13,5 +13,8 @@ def getAuthor(path):
 def getAlbum(path):
     return super(path,"album")
 
+def getYear(path):
+    return super(path,"date")
+
 def getLength(path):
     return MP3(path).info.length
