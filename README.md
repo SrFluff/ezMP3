@@ -19,6 +19,9 @@ Returns the album that a specified MP3 file corresponds to.\
 \
 `getLength(path)`
 \
+`getYear(path)`\
+Returns the year of a specified MP3 file.\
+\
 *NOTE: getLength() is the only function that doesn't use super() as its\
 backend*\
 Returns the length of a song in milliseconds.
