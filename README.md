@@ -5,7 +5,7 @@ A library for getting info from MP3s
 # Functions
 
 `version()`\
-Returns the current version of ezMP3\
+Returns the current version of ezMP3.\
 \
 `super(path,tag)`\
 Takes the path of an MP3 and a metadata tag(ex. album), then returns the\
