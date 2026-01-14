@@ -18,10 +18,10 @@ Returns the artist of a specified MP3 file.\
 Returns the album that a specified MP3 file corresponds to.\
 \
 `getLength(path)`
+Returns the length of a song in milliseconds.\
 \
 `getYear(path)`\
 Returns the year of a specified MP3 file.\
 \
 *NOTE: getLength() is the only function that doesn't use super() as its\
 backend*\
-Returns the length of a song in milliseconds.
