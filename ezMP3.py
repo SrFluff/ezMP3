@@ -1,7 +1,7 @@
 from mutagen.mp3 import MP3
 from mutagen.easyid3 import EasyID3
 
-ezversion = "1.0.0"
+ezversion = "1.1.0"
 
 def version():
     return ezversion
