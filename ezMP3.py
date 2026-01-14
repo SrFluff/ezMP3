@@ -1,6 +1,11 @@
 from mutagen.mp3 import MP3
 from mutagen.easyid3 import EasyID3
 
+ezversion = "1.0.0"
+
+def version():
+    return ezversion
+
 def super(path, tag):
     return EasyID3(path)[tag][0]
 
