@@ -32,3 +32,5 @@ need to open a file in `"wb"` mode.\
 \
 *NOTE: getLength() and getCover are the only functions that don't use super()\
 as their backend*\
+\
+*NOTE: getCover returns the cover in the `.png` format*\
