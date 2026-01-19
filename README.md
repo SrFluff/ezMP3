@@ -26,5 +26,9 @@ Returns the length of a song in milliseconds.\
 `getYear(path)`\
 Returns the year of a specified MP3 file.\
 \
-*NOTE: getLength() is the only function that doesn't use super() as its\
-backend*\
+`getCover(path)`\
+Returns the raw binary data from an extracted cover. To write this data you'll\
+need to open a file in `"wb"` mode.\
+\
+*NOTE: getLength() and getCover are the only functions that don't use super()\
+as their backend*\
