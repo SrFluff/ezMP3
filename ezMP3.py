@@ -26,8 +26,12 @@ def getLength(path):
     return MP3(path).info.length
 
 def getCover(path):
-    os.system(f"ffmpeg -hide_banner -loglevel error -y -i '{path}' -an -c:v copy '/tmp/ezmp3_cover.png'")
-    f = open("/tmp/ezmp3_cover.png","rb")
-    rType = f.read()
-    f.close()
+    os.system(f"ffmpeg -hide_banner -loglevel quiet -y -i '{path}' -an -c:v copy '/tmp/ezmp3_cover.png'")
+    if os.path.exists("/tmp/ezmp3_cover.png"):
+        f = open("/tmp/ezmp3_cover.png","rb")
+        rType = f.read()
+        f.close()
+        os.remove("/tmp/ezmp3_cover.png")
+    else:
+        rType = -1
     return rType
